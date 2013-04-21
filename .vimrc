@@ -159,7 +159,7 @@ function! ToggleGreekKeymap()
 		echo "keymap set to default"
 	endif
 endfunc
-
+" Use different comment styles based on the type of selection
 function! CommentVisual() range
 	let m = visualmode()
 	if m ==# 'v'
