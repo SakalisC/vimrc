@@ -173,6 +173,21 @@ function! CommentVisual() range
 		call NERDComment('x', "comment")
 	endif
 endfunction
+" Smooth scrolling
+function! SmoothScroll(up)
+	if a:up
+		let scrollaction="\<C-Y>"
+	else
+		let scrollaction="\<C-E>"
+	endif
+	let counter=0
+	while counter<&scroll
+		exec "normal " . scrollaction
+		redraw
+		sleep 4m
+		let counter+=1
+	endwhile
+endfunction
 
 " ************ "
 " Key bindings " {{{1
@@ -220,6 +235,9 @@ inoremap <C-l> <C-O>:call ToggleGreekKeymap()<cr>
 " Update the ctags and cscope databases
 nnoremap <leader>T :UpdateTags<cr>
 nnoremap <leader>C :!cscope -b -R<cr>
+" Smooth scrolling
+nnoremap <silent> <C-U> :call SmoothScroll(1)<cr>
+nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
 
 " ************* "
 " Abbreviations " {{{1
