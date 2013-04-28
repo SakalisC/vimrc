@@ -249,8 +249,6 @@ iabbrev @@a sakalisc@csd.auth.gr
 " ************ "
 " Autocommands " {{{1
 " ************ "
-" python.vim
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " Auto-clean fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 " Autoload created sessions
