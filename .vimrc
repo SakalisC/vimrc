@@ -94,32 +94,32 @@ set colorcolumn=81,121
 " *************** "
 " Plugin settings " {{{1
 " *************** "
-let NERDSpaceDelims=1
-let OmniCpp_MayCompleteDot=0
-let OmniCpp_MayCompleteArrow=0
-let OmniCpp_ShowPrototypeInAbbr=1
-let g:clang_complete_auto=0
 let g:clang_close_preview=1
-let g:clang_user_library=1
+let g:clang_complete_auto=0
 let g:clang_complete_macros=1
-let g:ycm_allow_changing_updatetime=0
-let g:ycm_add_preview_to_completeopt=1
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
-let g:ycm_confirm_extra_conf=1
-let g:ycm_register_as_syntastic_checker=0
-let g:easytags_python_enabled=1
+let g:clang_user_library=1
 let g:easytags_auto_update=0
-let g:syntastic_quiet_warnings=1
 let g:easytags_dynamic_files=2
+let g:easytags_python_enabled=1
+let g:LatexBox_output_type="pdf"
+let g:LatexBox_viewer="evince"
+let g:Powerline_cache_dir = "/home/chriss/.vim/files"
+let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_mode_map = { "mode": "passive",
 			\ "active_filetypes": ["sh", "lua"],
 			\ "passive_filetypes": [] }
-let g:LatexBox_output_type="pdf"
-let g:LatexBox_viewer="evince"
-let g:SuperTabDefaultCompletionType = "context"
-let g:Powerline_cache_dir = "/home/chriss/.vim/files"
+let g:syntastic_quiet_warnings=1
+let g:ycm_add_preview_to_completeopt=1
+let g:ycm_allow_changing_updatetime=0
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_confirm_extra_conf=1
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_register_as_syntastic_checker=0
+let NERDSpaceDelims=1
+let OmniCpp_MayCompleteArrow=0
+let OmniCpp_MayCompleteDot=0
+let OmniCpp_ShowPrototypeInAbbr=1
 
 " **************** "
 " Custom functions " {{{1
