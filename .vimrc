@@ -223,6 +223,7 @@ nnoremap <F5> :GundoToggle<CR>
 nnoremap <silent> <Leader>f :CommandT<CR>
 nnoremap <silent> <Leader>b :CommandTBuffer<CR>
 nnoremap <silent> <Leader>t :CommandTTag<CR>
+nnoremap <silent> <Leader>F :CommandTFlush<CR>
 " Some quick toggles
 nnoremap <C-n> :call NumberToggle()<cr>
 nnoremap <Leader>/ :noh<CR>
