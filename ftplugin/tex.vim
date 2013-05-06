@@ -4,8 +4,10 @@ setlocal spell
 setlocal number
 " setlocal formatoptions+=a
 " When writing math, we want the default keymap
-let s:previous_keymap = ""
 function! MathKeymap()
+	if !exists('s:previous_keymap')
+		let s:previous_keymap = ""
+	endif
 	if (&keymap != "")
 		let s:previous_keymap = &keymap
 		call ToggleGreekKeymap()
