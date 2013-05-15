@@ -230,8 +230,9 @@ nnoremap <silent> <Leader>F :CommandTFlush<CR>
 nnoremap <C-n> :call NumberToggle()<cr>
 nnoremap <Leader>/ :noh<CR>
 nnoremap <Leader>? :set hlsearch!<CR>
-nnoremap <leader>l :set list!<CR>
-nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>sl :set list!<CR>
+nnoremap <leader>ss :set spell!<CR>
+nnoremap <leader>sw :set wrap!<CR>
 " Show syntax highlighting groups for word under cursor
 nnoremap <silent> <leader>S :call <SID>SynStack()<CR>
 " Toggle between greek_utf-8 and the default keymap
