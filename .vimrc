@@ -17,6 +17,8 @@ Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'hexHighlight.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
+" Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/powerline'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -53,6 +55,7 @@ set wildmenu
 set wildmode=full
 set listchars=tab:▸\ ,eol:¬
 set lazyredraw
+" set laststatus=2
 " Spell check
 set nospell
 set spelllang=el,en_gb
@@ -106,6 +109,8 @@ let g:easytags_python_enabled=1
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
 let g:Powerline_cache_dir = "/home/chriss/.vim/files"
+let g:Powerline_colorscheme = "solarized"
+let g:Powerline_symbols = "unicode"
 let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_mode_map = { "mode": "passive",
 			\ "active_filetypes": ["sh", "lua"],
