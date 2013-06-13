@@ -17,8 +17,6 @@ Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'hexHighlight.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
-" Bundle 'Lokaltog/vim-powerline'
-" Bundle 'Lokaltog/powerline'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -36,14 +34,11 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'wincent/Command-T'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
-" Bundle 'kana/vim-textobj-function'
-" Bundle 'kana/vim-textobj-user'
 " Bundle 'Valloric/YouCompleteMe'
 
 " *********** "
 " Preferences " {{{1
 " *********** "
-filetype plugin indent on
 " Settings regarding the visual aspects of vim
 set hlsearch
 set nowrap
@@ -56,14 +51,12 @@ set wildmenu
 set wildmode=full
 set listchars=tab:▸\ ,eol:¬
 set lazyredraw
-" set laststatus=2
 " Spell check
 set nospell
 set spelllang=el,en_gb
 " How and when to fold
 set foldmethod=syntax
 set foldlevelstart=99
-" set nofoldenable
 " Settings regarding code style
 set tabstop=4
 set softtabstop=4
@@ -80,7 +73,6 @@ set hidden
 " Tags settings
 set tags^=./.tags
 set tags+=~/.vim/tags/stl
-" set tags+=~/.vimtags
 
 " Miscellaneous settings
 set cryptmethod=blowfish
