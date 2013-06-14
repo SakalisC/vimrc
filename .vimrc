@@ -51,6 +51,8 @@ set wildmenu
 set wildmode=full
 set listchars=tab:▸\ ,eol:¬
 set lazyredraw
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=1024
 " Spell check
 set nospell
 set spelllang=el,en_gb
