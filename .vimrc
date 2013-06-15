@@ -193,6 +193,20 @@ function! SmoothScroll(up)
 		let counter+=1
 	endwhile
 endfunction
+" Use xxd for displaying binary files
+function! BinaryToggle()
+	if !exists('b:is_binary')
+		let b:is_binary = 0
+	endif
+
+	if b:is_binary == 0
+		execute '%!xxd'
+		let b:is_binary = 1
+	else
+		execute '%!xxd -r'
+		let b:is_binary = 0
+	endif
+endfunction
 
 " ************ "
 " Key bindings " {{{1
@@ -253,6 +267,8 @@ nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
 " fix for terminal vim, since terminals send <C-@> instead of <C-Space>
 imap <C-@> <C-Space>
 imap <C-Space> <C-X><C-O>
+" Convert between binary and hex representation with xxd
+nnoremap <leader>x :call BinaryToggle()<cr>
 
 " ************* "
 " Abbreviations " {{{1
