@@ -222,6 +222,10 @@ vnoremap <silent> // :call CommentVisual()<CR>
 nnoremap <silent> ?? :call NERDComment('n', "uncomment")<CR>
 " Gundo mapping
 nnoremap <F5> :GundoToggle<CR>
+" Tagbar mapping
+nnoremap <F6> :TagbarToggle<CR>
+" NERDTree mapping
+nnoremap <F4> :NERDTreeToggle<CR>
 " Command-T mappings
 nnoremap <silent> <Leader>f :CommandT<CR>
 nnoremap <silent> <Leader>b :CommandTBuffer<CR>
