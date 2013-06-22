@@ -247,6 +247,7 @@ nnoremap <silent> <Leader>t :CommandTTag<CR>
 nnoremap <silent> <Leader>F :CommandTFlush<CR>
 " Some quick toggles
 nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <leader>sh :call HexHighlight()<cr>
 nnoremap <Leader>/ :noh<CR>
 nnoremap <Leader>? :set hlsearch!<CR>
 nnoremap <leader>sl :set list!<CR>
