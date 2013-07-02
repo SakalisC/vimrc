@@ -67,6 +67,9 @@ set shiftwidth=4
 set noexpandtab
 set smarttab
 set autoindent 
+set formatopts+=j " When joining comments, remove the comment leader
+set formatopts+=c " Autoformat comments but not text
+set formatopts+=l " Do not break lines already long in insert mode
 " Only searches that contain uppercase letters are case sensitive
 set ignorecase
 set smartcase
