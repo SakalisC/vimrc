@@ -109,8 +109,9 @@ let g:Powerline_cache_dir = "/home/chriss/.vim/files"
 let g:Powerline_colorscheme = "solarized"
 let g:Powerline_symbols = "unicode"
 let g:SuperTabDefaultCompletionType = "context"
+let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
-			\ "active_filetypes": ["sh", "lua"],
+			\ "active_filetypes": ["sh", "lua", "python"],
 			\ "passive_filetypes": [] }
 let g:syntastic_quiet_warnings=1
 let g:ycm_add_preview_to_completeopt=1
