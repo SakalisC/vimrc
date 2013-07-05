@@ -67,7 +67,7 @@ set shiftwidth=4
 set noexpandtab
 set smarttab
 set autoindent 
-set formatoptions+=jcl
+set formatoptions+=jl
 " Only searches that contain uppercase letters are case sensitive
 set ignorecase
 set smartcase
