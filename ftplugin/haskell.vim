@@ -12,5 +12,6 @@ set textwidth=80
 nnoremap <silent> <localleader>a :Tabularize /\s=\s<CR>
 vnoremap <silent> <localleader>a :Tabularize /\s=\s<CR>
 
-" Useful applications
+" Set the compiler and reset the cmdheight
 compiler ghc
+set cmdheight=1
