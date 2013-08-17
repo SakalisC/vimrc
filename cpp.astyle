@@ -1,0 +1,10 @@
+--style=java
+--indent=force-tab=4
+--indent-col1-comments
+--min-conditional-indent=1
+--pad-header
+--unpad-paren
+--align-pointer=name
+--align-reference=name
+--max-code-length=80
+--mode=c

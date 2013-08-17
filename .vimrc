@@ -7,16 +7,19 @@ set nocompatible
 filetype off 
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
-Bundle 'gmarik/vundle'
 Bundle 'clang-complete'
 Bundle 'coderifous/textobj-word-column.vim'
 Bundle 'dahu/LearnVim'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'derekwyatt/vim-protodef'
 Bundle 'ervandew/supertab'
+Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'hexHighlight.vim'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'kana/vim-textobj-user'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Bundle 'lukerandall/haskellmode-vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'Pychimp/vim-luna'
 Bundle 'scrooloose/nerdcommenter'
@@ -32,10 +35,13 @@ Bundle 'tpope/vim-obsession'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tsaleh/vim-matchit'
 Bundle 'wincent/Command-T'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
+" Bundle 'bitc/lushtags'
 " Bundle 'Valloric/YouCompleteMe'
+" Bundle 'vim-scripts/Haskell-Conceal'
 
 " *********** "
 " Preferences " {{{1
@@ -67,6 +73,7 @@ set shiftwidth=4
 set noexpandtab
 set smarttab
 set autoindent 
+set formatoptions+=jl
 " Only searches that contain uppercase letters are case sensitive
 set ignorecase
 set smartcase
@@ -102,14 +109,16 @@ let g:clang_user_library=1
 let g:easytags_auto_update=0
 let g:easytags_dynamic_files=2
 let g:easytags_python_enabled=1
+let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
 let g:Powerline_cache_dir = "/home/chriss/.vim/files"
 let g:Powerline_colorscheme = "solarized"
 let g:Powerline_symbols = "unicode"
 let g:SuperTabDefaultCompletionType = "context"
+let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
-			\ "active_filetypes": ["sh", "lua"],
+			\ "active_filetypes": ["sh", "lua", "python"],
 			\ "passive_filetypes": [] }
 let g:syntastic_quiet_warnings=1
 let g:ycm_add_preview_to_completeopt=1
