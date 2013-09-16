@@ -280,6 +280,8 @@ imap <C-@> <C-Space>
 imap <C-Space> <C-X><C-O>
 " Convert between binary and hex representation with xxd
 nnoremap <leader>x :call BinaryToggle()<cr>
+" Since Ultisnips uses the <C-D> combination, I need a new one for digraphs
+inoremap <C-D> <C-K>
 
 " ************* "
 " Abbreviations " {{{1
