@@ -9,9 +9,10 @@ set nojoinspaces
 set textwidth=80
 
 " Custom mappings
-nnoremap <silent> <localleader>a :Tabularize /\s=\s<CR>
-vnoremap <silent> <localleader>a :Tabularize /\s=\s<CR>
+nnoremap <silent> <localleader>a :Tabularize /\s\zs=\ze\s/l1<CR>
+vnoremap <silent> <localleader>a :Tabularize /\s\zs=\ze\s/l1<CR>
 
-" Set the compiler and reset the cmdheight
+" Set the compiler and reset some annoying settings
 compiler ghc
 set cmdheight=1
+set balloonexpr=
