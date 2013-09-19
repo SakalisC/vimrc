@@ -218,6 +218,20 @@ function! BinaryToggle()
 	endif
 endfunction
 
+function! Journal()
+	let dir = "/home/chriss/Dropbox/Journal"
+	let date = substitute(system("date +\"%F\""), "\n*$", "", "g")
+	let file = dir . "/" . fnameescape(date) . ".txt"
+
+	execute "e " . file
+	setlocal textwidth=80
+	setlocal spell
+	if !filereadable(file)
+		X
+		write
+	endif
+endfunction
+
 " ************ "
 " Key bindings " {{{1
 " ************ "
