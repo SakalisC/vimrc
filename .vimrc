@@ -152,8 +152,10 @@ endfunction
 " Toggle between absolute and relative line numbers.
 function! NumberToggle()
     if(&relativenumber == 1)
+		set norelativenumber
         set number
     else
+		set nonumber
         set relativenumber
     endif
 endfunc

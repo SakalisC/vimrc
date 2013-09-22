@@ -1,6 +1,7 @@
 setlocal textwidth=80
 setlocal spell
 " For some strange reason, relativenumber makes vim very slow
+setlocal norelativenumber
 setlocal number
 " setlocal formatoptions+=a
 " When writing math, we want the default keymap
