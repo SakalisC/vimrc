@@ -52,7 +52,7 @@ set hlsearch
 set nowrap
 set linebreak
 set showbreak=…
-set relativenumber
+set number
 set showcmd
 set completeopt=menu
 set wildmenu
