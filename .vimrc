@@ -18,6 +18,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'hexHighlight.vim'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'kana/vim-textobj-user'
+Bundle 'kien/ctrlp.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'lukerandall/haskellmode-vim'
 Bundle 'nelstrom/vim-visual-star-search'
@@ -37,12 +38,10 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tsaleh/vim-matchit'
-Bundle 'wincent/Command-T'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
 " Bundle 'bitc/lushtags'
 " Bundle 'Valloric/YouCompleteMe'
-" Bundle 'vim-scripts/Haskell-Conceal'
 
 " *********** "
 " Preferences " {{{1
@@ -107,6 +106,8 @@ let g:clang_close_preview=1
 let g:clang_complete_auto=0
 let g:clang_complete_macros=1
 let g:clang_user_library=1
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_open_new_file='r'
 let g:easytags_auto_update=0
 let g:easytags_dynamic_files=2
 let g:easytags_python_enabled=1
@@ -267,10 +268,9 @@ nnoremap <F6> :TagbarToggle<CR>
 " NERDTree mapping
 nnoremap <F4> :NERDTreeToggle<CR>
 " Command-T mappings
-nnoremap <silent> <Leader>f :CommandT<CR>
-nnoremap <silent> <Leader>b :CommandTBuffer<CR>
-nnoremap <silent> <Leader>t :CommandTTag<CR>
-nnoremap <silent> <Leader>F :CommandTFlush<CR>
+nnoremap <silent> <Leader>f :CtrlP<CR>
+nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
+nnoremap <silent> <Leader>t :CtrlPTag<CR>
 " Some quick toggles
 nnoremap <C-n> :call NumberToggle()<cr>
 nnoremap <leader>sh :call HexHighlight()<cr>
