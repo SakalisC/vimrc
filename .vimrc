@@ -296,6 +296,8 @@ imap <C-Space> <C-X><C-O>
 nnoremap <leader>x :call BinaryToggle()<cr>
 " Since Ultisnips uses the <C-D> combination, I need a new one for digraphs
 inoremap <C-D> <C-K>
+" Paste from the yank register in Visual mode
+vnoremap P "0p
 
 " ************* "
 " Abbreviations " {{{1
