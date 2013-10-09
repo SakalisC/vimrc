@@ -7,6 +7,7 @@ set nocompatible
 filetype off 
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'clang-complete'
 Bundle 'coderifous/textobj-word-column.vim'
 Bundle 'dahu/LearnVim'
