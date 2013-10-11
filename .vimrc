@@ -78,6 +78,8 @@ set formatoptions+=jl
 " Only searches that contain uppercase letters are case sensitive
 set ignorecase
 set smartcase
+" Use incremental search
+set incsearch
 " Instead of unloading, hide the buffers
 set hidden
 
