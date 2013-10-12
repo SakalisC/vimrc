@@ -57,7 +57,7 @@ set showcmd
 set completeopt=menu
 set wildmenu
 set wildmode=full
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,nbsp:_,trail:·
 set lazyredraw
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=1024
@@ -73,7 +73,7 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 set smarttab
-set autoindent 
+set autoindent
 set formatoptions+=jl
 " Only searches that contain uppercase letters are case sensitive
 set ignorecase
