@@ -54,11 +54,12 @@ set linebreak
 set showbreak=…
 set number
 set showcmd
-set completeopt=menu
+set completeopt=menu,longest
 set wildmenu
-set wildmode=full
+set wildmode=longest:full
 set listchars=tab:▸\ ,nbsp:_,trail:·
 set lazyredraw
+set scroll=30
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=1024
 " Spell check
@@ -113,6 +114,7 @@ let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
 let g:easytags_auto_update=0
 let g:easytags_dynamic_files=2
+let g:easytags_include_members=1
 let g:easytags_python_enabled=1
 let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
