@@ -310,7 +310,7 @@ vnoremap P "0p
 " ************* "
 " e-mails
 iabbrev @@g chrissakalis@gmail.com
-iabbrev @@a sakalisc@csd.auth.gr
+iabbrev @@u Christos.Sakalis.3822@student.uu.se
 
 " ************ "
 " Autocommands " {{{1
