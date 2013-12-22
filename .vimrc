@@ -62,7 +62,7 @@ set wildmenu
 set wildmode=longest:full
 set listchars=tab:▸\ ,nbsp:_,trail:·
 set lazyredraw
-set scroll=30
+" set scroll=30
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=1024
 " Spell check
@@ -89,7 +89,7 @@ set hidden
 
 " Tags settings
 set tags^=./.tags
-set tags+=~/.vim/tags/stl
+" set tags+=~/.vim/tags/stl
 
 " Miscellaneous settings
 set cryptmethod=blowfish
@@ -311,8 +311,8 @@ vnoremap P "0p
 " Abbreviations " {{{1
 " ************* "
 " e-mails
-iabbrev @@g chrissakalis@gmail.com
-iabbrev @@u Christos.Sakalis.3822@student.uu.se
+" iabbrev m@g chrissakalis@gmail.com
+" iabbrev m@u Christos.Sakalis.3822@student.uu.se
 
 " ************ "
 " Autocommands " {{{1
