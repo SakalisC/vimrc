@@ -131,7 +131,7 @@ let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
 			\ "active_filetypes": ["sh", "lua", "python"],
 			\ "passive_filetypes": [] }
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:ycm_add_preview_to_completeopt=1
 let g:ycm_allow_changing_updatetime=0
 let g:ycm_autoclose_preview_window_after_completion=1
