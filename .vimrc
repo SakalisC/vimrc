@@ -25,6 +25,7 @@ Bundle 'LaTeX-Box-Team/LaTeX-Box'
 " Bundle 'lukerandall/haskellmode-vim'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'Pychimp/vim-luna'
+Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -116,6 +117,9 @@ let g:clang_complete_macros=1
 let g:clang_user_library=1
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
+let g:delimitMate_expand_cr=2
+let g:delimitMate_expand_space=1
+let g:delimitMate_smart_matchpairs=1
 let g:easytags_auto_update=0
 let g:easytags_dynamic_files=2
 let g:easytags_include_members=1
