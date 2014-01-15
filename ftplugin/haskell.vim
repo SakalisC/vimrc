@@ -16,3 +16,6 @@ vnoremap <silent> <localleader>a :Tabularize /\s\zs=\ze\s/l1<CR>
 " compiler ghc
 " set cmdheight=1
 " set balloonexpr=
+
+" Files to ignore
+set wildignore+=*.o,*.hi
