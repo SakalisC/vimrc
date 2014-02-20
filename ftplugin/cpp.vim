@@ -5,3 +5,5 @@ set textwidth=80
 set formatoptions+=c
 " ignore C++ related binaries
 set wildignore+=*.o,*.obj,*.a,*.lib,*.elf
+" Format using clang-format
+nnoremap <leader>cf :pyf ~/.vim/clang-format.py<cr>
