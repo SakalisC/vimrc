@@ -310,6 +310,8 @@ nnoremap <leader>x :call BinaryToggle()<cr>
 inoremap <C-D> <C-K>
 " Paste from the yank register in Visual mode
 vnoremap P "0p
+" Replace all occurences of the word under the cursor
+nnoremap <expr> <leader>r ':%s/\<'.expand('<cword>').'\>//g<left><left>'
 
 " ************* "
 " Abbreviations " {{{1
