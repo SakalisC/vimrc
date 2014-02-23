@@ -230,7 +230,7 @@ function! BinaryToggle()
 		let b:is_binary = 0
 	endif
 endfunction
-
+" A very simple journal function
 function! Journal()
 	let dir = "/home/chriss/Dropbox/Journal"
 	let date = substitute(system("date +\"%F\""), "\n*$", "", "g")
@@ -243,6 +243,41 @@ function! Journal()
 		X
 		write
 	endif
+endfunction
+" Replace all occurences of the word under the cursor
+function ReplaceWord()
+	" Save the last search and cursor position. We need script-local variables
+	" because we can't pass the function local ones to the autocmd function.
+    let b:s_rpl = @/
+    let b:l_rpl = line(".")
+    let b:c_rpl = col(".")
+    " Save the current word
+	let b:w_rpl = expand("<cword>")
+	" Prepare for after leaving insert mode
+    augroup callback_CirtUrvOw
+        autocmd!
+        autocmd InsertLeave <buffer> call ReplaceWordCallback()
+		" autocmd InsertEnter <buffer> normal l
+    augroup END
+	" Delete the word and start insert mode
+	normal diw
+    startinsert
+endfunction
+function ReplaceWordCallback()
+	" Get the new word under the cursor
+	let nw = expand("<cword>")
+	" Search and replace
+    execute "%s/" . b:w_rpl . "/" . nw . "/g"
+	" Restore the search buffer and the cursor position
+    let @/=b:s_rpl
+    call cursor(b:l_rpl, b:c_rpl)
+	normal e
+	" silent! call repeat#set(":call ReplaceWordCallback()<cr>", v:count)
+	" We no longer need the callback function
+    augroup callback_CirtUrvOw
+        autocmd!
+    augroup END
+    augroup! callback_CirtUrvOw
 endfunction
 
 " ************ "
@@ -312,6 +347,7 @@ inoremap <C-D> <C-K>
 vnoremap P "0p
 " Replace all occurences of the word under the cursor
 nnoremap <expr> <leader>r ':%s/\<'.expand('<cword>').'\>//g<left><left>'
+nnoremap <silent> <leader>R :call ReplaceWord()<cr>
 
 " ************* "
 " Abbreviations " {{{1
