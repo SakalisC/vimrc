@@ -348,6 +348,8 @@ vnoremap P "0p
 " Replace all occurences of the word under the cursor
 nnoremap <expr> <leader>r ':%s/\<'.expand('<cword>').'\>//g<left><left>'
 nnoremap <silent> <leader>R :call ReplaceWord()<cr>
+" Don't move when using * for searching
+nnoremap <silent> * :let stay_star_view=winsaveview()<cr>*:call winrestview(stay_star_view)<cr>
 
 " ************* "
 " Abbreviations " {{{1
