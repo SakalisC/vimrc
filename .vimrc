@@ -350,6 +350,9 @@ nnoremap <expr> <leader>r ':%s/\<'.expand('<cword>').'\>//g<left><left>'
 nnoremap <silent> <leader>R :call ReplaceWord()<cr>
 " Don't move when using * for searching
 nnoremap <silent> * :let stay_star_view=winsaveview()<cr>*:call winrestview(stay_star_view)<cr>
+" % is kind of inaccessible and <BS> is useless in normal mode
+" This is a map instead of remap because of matchit
+nmap <BS> %
 
 " ************* "
 " Abbreviations " {{{1
