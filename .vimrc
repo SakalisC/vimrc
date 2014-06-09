@@ -68,7 +68,7 @@ set lazyredraw
 set synmaxcol=1024
 " Spell check
 set nospell
-set spelllang=el,en_gb
+set spelllang=el,en_gb,sv
 " How and when to fold
 set foldmethod=syntax
 set foldlevelstart=99
