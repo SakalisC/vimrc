@@ -354,6 +354,8 @@ nnoremap <silent> * :let stay_star_view=winsaveview()<cr>*:call winrestview(stay
 " % is kind of inaccessible and <BS> is useless in normal mode
 " This is a map instead of remap because of matchit
 nmap <BS> %
+" Strip all trailing whitespace from the file
+nnoremap <leader>W :call StripTrailingWhitespaces()<cr>
 
 " ************* "
 " Abbreviations " {{{1
