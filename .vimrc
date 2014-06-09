@@ -55,7 +55,7 @@ Bundle 'xolox/vim-misc'
 set hlsearch
 set nowrap
 set linebreak
-set showbreak=…
+set showbreak=↪
 set number
 set showcmd
 set completeopt=menu,longest
