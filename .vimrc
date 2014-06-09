@@ -245,7 +245,7 @@ function! Journal()
 	endif
 endfunction
 " Replace all occurences of the word under the cursor
-function ReplaceWord()
+function! ReplaceWord()
 	" Save the last search and cursor position. We need script-local variables
 	" because we can't pass the function local ones to the autocmd function.
     let b:s_rpl = @/
@@ -263,7 +263,7 @@ function ReplaceWord()
 	normal diw
     startinsert
 endfunction
-function ReplaceWordCallback()
+function! ReplaceWordCallback()
 	" Get the new word under the cursor
 	let nw = expand("<cword>")
 	" Search and replace
