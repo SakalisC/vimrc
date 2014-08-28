@@ -121,6 +121,7 @@ let g:delimitMate_expand_cr=2
 let g:delimitMate_expand_space=1
 let g:delimitMate_smart_matchpairs=1
 let g:easytags_auto_update=0
+let g:easytags_async=1
 let g:easytags_dynamic_files=2
 let g:easytags_include_members=1
 let g:easytags_python_enabled=1
