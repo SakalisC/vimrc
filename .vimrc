@@ -233,20 +233,6 @@ function! BinaryToggle()
 		let b:is_binary = 0
 	endif
 endfunction
-" A very simple journal function
-function! Journal()
-	let dir = "/home/chriss/Dropbox/Journal"
-	let date = substitute(system("date +\"%F\""), "\n*$", "", "g")
-	let file = dir . "/" . fnameescape(date) . ".txt"
-
-	execute "e " . file
-	setlocal textwidth=80
-	setlocal spell
-	if !filereadable(file)
-		X
-		write
-	endif
-endfunction
 " Replace all occurences of the word under the cursor
 function! ReplaceWord()
 	" Save the last search and cursor position. We need script-local variables
