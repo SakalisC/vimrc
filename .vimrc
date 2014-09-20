@@ -63,7 +63,7 @@ set number
 set showcmd
 set completeopt=menu,longest
 set wildmenu
-set wildmode=longest:full
+set wildmode=longest:full,full
 set listchars=tab:▸\ ,nbsp:_,trail:·
 set lazyredraw
 " set scroll=30
