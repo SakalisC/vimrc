@@ -10,9 +10,15 @@ set guioptions-=m
 set guioptions+=c
 
 " Adjust the window size
-" autocmd GUIEnter * set lines=40 columns=80
 set lines=51
 set columns=100
+
+" Solarized does not work that good in the terminal I am using, so let's just
+" use it with gvim
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+call togglebg#map("<F12>")
 
 " Only with gvim, set the proper encoding for tex files
 function! CheckFileEncoding()

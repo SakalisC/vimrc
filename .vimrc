@@ -104,6 +104,7 @@ set directory^=~/.vim/files/swap//,.
 set backupdir=~/.vim/files/backup//,.
 set undodir=~/.vim/files/undo//,.
 " Set the colorscheme
+set background=dark
 if &term == 'xterm'
 	set t_Co=256
 endif
