@@ -328,10 +328,6 @@ nnoremap <leader>C :!cscope -b -R<cr>
 " Smooth scrolling
 nnoremap <silent> <C-U> :call SmoothScroll(1)<cr>
 nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
-" <C-X><C-O> is an awful combination, use <C-space>. The first mapping is a
-" fix for terminal vim, since terminals send <C-@> instead of <C-Space>
-imap <C-@> <C-Space>
-imap <C-Space> <C-X><C-O>
 " Convert between binary and hex representation with xxd
 nnoremap <leader>x :call BinaryToggle()<cr>
 " Since Ultisnips uses the <C-D> combination, I need a new one for digraphs
