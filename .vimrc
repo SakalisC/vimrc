@@ -8,12 +8,12 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'clang-complete'
+" Plugin 'clang-complete'
 Plugin 'coderifous/textobj-word-column.vim'
 Plugin 'dahu/LearnVim'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'derekwyatt/vim-protodef'
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'hexHighlight.vim'
@@ -43,11 +43,11 @@ Plugin 'tpope/vim-unimpaired'
 " Plugin 'tsaleh/vim-matchit'
 " Plugin 'vim-scripts/haskell.vim'
 Plugin 'travitch/hasksyn'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 " Plugin 'bitc/lushtags'
-" Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -141,12 +141,13 @@ let g:syntastic_mode_map = { "mode": "passive",
 			\ "active_filetypes": ["sh", "lua", "python", "haskell"],
 			\ "passive_filetypes": [] }
 " let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:UltiSnipsExpandTrigger = "<C-s>"
 let g:ycm_add_preview_to_completeopt=1
 let g:ycm_allow_changing_updatetime=0
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_confirm_extra_conf=1
-let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py"
 let g:ycm_register_as_syntastic_checker=0
 let NERDSpaceDelims=1
 let OmniCpp_MayCompleteArrow=0
