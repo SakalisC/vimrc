@@ -345,6 +345,8 @@ nnoremap <silent> * :let stay_star_view=winsaveview()<cr>*:call winrestview(stay
 nmap <BS> %
 " Strip all trailing whitespace from the file
 nnoremap <leader>W :call StripTrailingWhitespaces()<cr>
+" Set the working directory to the one containing the current file
+nnoremap <leader>cd :cd %:h<cr>
 
 " ************* "
 " Abbreviations " {{{1
