@@ -307,7 +307,7 @@ nnoremap <F6> :TagbarToggle<CR>
 " NERDTree mapping
 nnoremap <F4> :NERDTreeToggle<CR>
 " Command-T mappings
-nnoremap <silent> <Leader>f :CtrlP<CR>
+nnoremap <silent> <Leader>e :CtrlP<CR>
 nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
 nnoremap <silent> <Leader>t :CtrlPTag<CR>
 " Some quick toggles
