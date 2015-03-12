@@ -288,8 +288,8 @@ nmap  <Right>  <NOP>
 " inoremap jk <esc>
 " inoremap <esc> <nop>
 " Working with my .vimrc
-nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
-nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
+nnoremap <silent> <leader>ve :split $MYVIMRC<CR>
+nnoremap <silent> <leader>vs :source $MYVIMRC<CR>
 " Mappings for fswitch.
 nnoremap <silent> <Leader>h :FSHere<cr>`"
 " Write with sudo
