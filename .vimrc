@@ -261,7 +261,7 @@ function! ReplaceWordCallback()
 	" Get the new word under the cursor
 	let nw = expand("<cword>")
 	" Search and replace
-    execute "%s/" . b:w_rpl . "/" . nw . "/g"
+    execute "%s/\\<" . b:w_rpl . "\\>/" . nw . "/g"
 	" Restore the search buffer and the cursor position
     let @/=b:s_rpl
     call cursor(b:l_rpl, b:c_rpl)
