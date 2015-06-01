@@ -8,12 +8,10 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
-" Plugin 'clang-complete'
 Plugin 'coderifous/textobj-word-column.vim'
 Plugin 'dahu/LearnVim'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'derekwyatt/vim-protodef'
-" Plugin 'ervandew/supertab'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'hexHighlight.vim'
@@ -40,14 +38,11 @@ Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-" Plugin 'tsaleh/vim-matchit'
-" Plugin 'vim-scripts/haskell.vim'
 Plugin 'travitch/hasksyn'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
-" Plugin 'bitc/lushtags'
 
 call vundle#end()
 
@@ -115,15 +110,8 @@ set colorcolumn=81,121
 " *************** "
 " Plugin settings " {{{1
 " *************** "
-let g:clang_close_preview=1
-let g:clang_complete_auto=0
-let g:clang_complete_macros=1
-let g:clang_user_library=1
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
-let g:delimitMate_expand_cr=2
-let g:delimitMate_expand_space=1
-let g:delimitMate_smart_matchpairs=1
 let g:easytags_auto_update=0
 let g:easytags_async=1
 let g:easytags_dynamic_files=2
@@ -132,10 +120,6 @@ let g:easytags_python_enabled=1
 let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
-let g:Powerline_cache_dir = "/home/chriss/.vim/files"
-let g:Powerline_colorscheme = "solarized"
-let g:Powerline_symbols = "unicode"
-let g:SuperTabDefaultCompletionType = "context"
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
@@ -151,9 +135,6 @@ let g:ycm_confirm_extra_conf=1
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py"
 let g:ycm_register_as_syntastic_checker=0
 let NERDSpaceDelims=1
-let OmniCpp_MayCompleteArrow=0
-let OmniCpp_MayCompleteDot=0
-let OmniCpp_ShowPrototypeInAbbr=1
 
 " **************** "
 " Custom functions " {{{1
