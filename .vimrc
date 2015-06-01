@@ -312,8 +312,6 @@ nnoremap <silent> <C-U> :call SmoothScroll(1)<cr>
 nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
 " Convert between binary and hex representation with xxd
 nnoremap <leader>x :call BinaryToggle()<cr>
-" Since Ultisnips uses the <C-D> combination, I need a new one for digraphs
-inoremap <C-D> <C-K>
 " Paste from the yank register in Visual mode
 vnoremap P "0p
 " Replace all occurences of the word under the cursor
