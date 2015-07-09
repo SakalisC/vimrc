@@ -279,14 +279,6 @@ endfunction
 " ************ "
 let mapleader = ","
 let maplocalleader = "\\"
-" Disable the arrow keys in normal mode.
-nmap  <Up>     <NOP>
-nmap  <Down>   <NOP>
-nmap  <Left>   <NOP>
-nmap  <Right>  <NOP>
-" Exit insert mode with jk
-" inoremap jk <esc>
-" inoremap <esc> <nop>
 " Working with my .vimrc
 nnoremap <silent> <leader>ve :split $MYVIMRC<CR>
 nnoremap <silent> <leader>vs :source $MYVIMRC<CR>
