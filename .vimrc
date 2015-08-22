@@ -320,6 +320,9 @@ nmap <BS> %
 nnoremap <leader>W :call StripTrailingWhitespaces()<cr>
 " Set the working directory to the one containing the current file
 nnoremap <leader>cd :cd %:h<cr>
+" Ycm commands
+nmap <leader>gt :YcmCompleter GoTo<cr>
+nmap <leader>gT :YcmCompleter GetType<cr>
 
 " ************* "
 " Abbreviations " {{{1
