@@ -8,6 +8,7 @@ filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 Plugin 'coderifous/textobj-word-column.vim'
 Plugin 'dahu/LearnVim'
 Plugin 'derekwyatt/vim-fswitch'
@@ -62,6 +63,7 @@ set wildmenu
 set wildmode=longest:full,full
 set listchars=tab:▸\ ,nbsp:_,trail:·
 set lazyredraw
+set laststatus=2
 " set scroll=30
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=1024
@@ -112,6 +114,8 @@ set colorcolumn=81,121
 " *************** "
 " Plugin settings " {{{1
 " *************** "
+let g:airline_exclude_preview = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
 let g:easytags_auto_update=0
