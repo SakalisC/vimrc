@@ -88,8 +88,6 @@ set smartcase
 set incsearch
 " Instead of unloading, hide the buffers
 set hidden
-" Make tilde a normal operator
-set tildeop
 
 " Tags settings
 set tags^=./.tags
