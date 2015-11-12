@@ -69,7 +69,7 @@ set laststatus=2
 set synmaxcol=1024
 " Spell check
 set nospell
-set spelllang=el,en_gb,sv
+set spelllang=el,en,sv
 " How and when to fold
 set foldmethod=syntax
 set foldlevelstart=99
