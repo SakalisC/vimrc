@@ -4,7 +4,7 @@
 " ****** "
 " Vundle settings need to go first
 set nocompatible
-filetype off 
+filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'altercation/vim-colors-solarized'
@@ -145,30 +145,30 @@ let NERDSpaceDelims=1
 " **************** "
 " Strip trailing whitespace
 function! StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
+	" Preparation: save last search, and cursor position.
+	let _s=@/
+	let l = line(".")
+	let c = col(".")
+	" Do the business:
+	%s/\s\+$//e
+	" Clean up: restore previous search history, and cursor position
+	let @/=_s
+	call cursor(l, c)
 endfunction
 " Toggle between absolute and relative line numbers.
 function! NumberToggle()
-    if(&relativenumber == 1)
+	if(&relativenumber == 1)
 		set norelativenumber
-    else
-        set relativenumber
-    endif
+	else
+		set relativenumber
+	endif
 endfunc
 " Show syntax highlighting groups for word under cursor
 function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 " Change keyboard map and enable iminsert/imsearch if necessery
 function! ToggleGreekKeymap()
@@ -227,36 +227,36 @@ endfunction
 function! ReplaceWord()
 	" Save the last search and cursor position. We need script-local variables
 	" because we can't pass the function local ones to the autocmd function.
-    let b:s_rpl = @/
-    let b:l_rpl = line(".")
-    let b:c_rpl = col(".")
-    " Save the current word
+	let b:s_rpl = @/
+	let b:l_rpl = line(".")
+	let b:c_rpl = col(".")
+	" Save the current word
 	let b:w_rpl = expand("<cword>")
 	" Prepare for after leaving insert mode
-    augroup callback_CirtUrvOw
-        autocmd!
-        autocmd InsertLeave <buffer> call ReplaceWordCallback()
+	augroup callback_CirtUrvOw
+		autocmd!
+		autocmd InsertLeave <buffer> call ReplaceWordCallback()
 		" autocmd InsertEnter <buffer> normal l
-    augroup END
+	augroup END
 	" Delete the word and start insert mode
 	normal diw
-    startinsert
+	startinsert
 endfunction
 function! ReplaceWordCallback()
 	" Get the new word under the cursor
 	let nw = expand("<cword>")
 	" Search and replace
-    execute "%s/\\<" . b:w_rpl . "\\>/" . nw . "/g"
+	execute "%s/\\<" . b:w_rpl . "\\>/" . nw . "/g"
 	" Restore the search buffer and the cursor position
-    let @/=b:s_rpl
-    call cursor(b:l_rpl, b:c_rpl)
+	let @/=b:s_rpl
+	call cursor(b:l_rpl, b:c_rpl)
 	normal e
 	" silent! call repeat#set(":call ReplaceWordCallback()<cr>", v:count)
 	" We no longer need the callback function
-    augroup callback_CirtUrvOw
-        autocmd!
-    augroup END
-    augroup! callback_CirtUrvOw
+	augroup callback_CirtUrvOw
+		autocmd!
+	augroup END
+	augroup! callback_CirtUrvOw
 endfunction
 
 " ************ "
