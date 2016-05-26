@@ -113,7 +113,7 @@ set colorcolumn=81,121
 " Plugin settings " {{{1
 " *************** "
 let g:airline_exclude_preview = 1
-let g:airline#extensions#whitespace#mixed_indent_algo = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
 let g:easytags_auto_update=0
