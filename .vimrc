@@ -297,6 +297,7 @@ nnoremap <Leader>? :set hlsearch!<CR>
 nnoremap <leader>sl :set list!<CR>
 nnoremap <leader>ss :set spell!<CR>
 nnoremap <leader>sw :set wrap!<CR>
+nnoremap <leader>sW :set wrap<CR>:noremap j gj<CR>:noremap k gk<CR>
 " Show syntax highlighting groups for word under cursor
 nnoremap <silent> <leader>S :call <SID>SynStack()<CR>
 " Toggle between greek_utf-8 and the default keymap
