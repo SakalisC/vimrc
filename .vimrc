@@ -45,6 +45,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'milkypostman/vim-togglelist'
 Plugin 'tpope/vim-sleuth'
+Plugin 'tpope/vim-speeddating'
 
 call vundle#end()
 
