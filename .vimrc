@@ -44,6 +44,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'milkypostman/vim-togglelist'
+Plugin 'tpope/vim-sleuth'
 
 call vundle#end()
 
