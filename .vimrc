@@ -34,7 +34,8 @@ Plugin 'Tagbar'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
@@ -124,6 +125,7 @@ let g:easytags_python_enabled=1
 let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
+let g:pandoc#modules#disabled = ['formatting']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
