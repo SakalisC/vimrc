@@ -47,6 +47,7 @@ Plugin 'milkypostman/vim-togglelist'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-speeddating'
 Plugin 'rking/ag.vim'
+Plugin 'frasercrmck/formative.vim'
 
 call vundle#end()
 
@@ -124,6 +125,7 @@ let g:easytags_async=1
 let g:easytags_dynamic_files=2
 let g:easytags_include_members=1
 let g:easytags_python_enabled=1
+let g:fmtv_clang_format_py = $HOME . '/.vim/clang-format.py'
 let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
