@@ -3,3 +3,4 @@ c.clang.cache
 cpp.clang.cache
 files
 .netrwhist
+haskellmode.config
