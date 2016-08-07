@@ -1,55 +1,50 @@
 " vim: foldmethod=marker foldenable foldlevel=0 foldlevelstart=0
 " ****** "
-" Vundle " {{{1
+" Plugins " {{{1
 " ****** "
-" Vundle settings need to go first
-set nocompatible
-filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'coderifous/textobj-word-column.vim'
-Plugin 'dahu/LearnVim'
-Plugin 'derekwyatt/vim-fswitch'
-Plugin 'derekwyatt/vim-protodef'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'hexHighlight.vim'
-Plugin 'honza/vim-snippets'
-Plugin 'kana/vim-textobj-indent'
-Plugin 'kana/vim-textobj-user'
-Plugin 'kien/ctrlp.vim'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'lukerandall/haskellmode-vim'
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'Pychimp/vim-luna'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
-Plugin 'sjl/gundo.vim'
-Plugin 'Tagbar'
-Plugin 'tomasr/molokai'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'tpope/vim-obsession'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'travitch/hasksyn'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
-Plugin 'milkypostman/vim-togglelist'
-Plugin 'tpope/vim-sleuth'
-Plugin 'tpope/vim-speeddating'
-Plugin 'rking/ag.vim'
-Plugin 'frasercrmck/formative.vim'
+call plug#begin()
 
-call vundle#end()
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'coderifous/textobj-word-column.vim'
+Plug 'dahu/LearnVim'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'derekwyatt/vim-protodef'
+Plug 'frasercrmck/formative.vim', { 'for': ['c', 'cpp'] }
+Plug 'godlygeek/tabular'
+Plug 'hexHighlight.vim'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-user'
+Plug 'kien/ctrlp.vim'
+Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
+Plug 'lukerandall/haskellmode-vim', { 'for': 'haskell' }
+Plug 'milkypostman/vim-togglelist'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'Pychimp/vim-luna'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/syntastic'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
+Plug 'Tagbar'
+Plug 'tomasr/molokai'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'travitch/hasksyn'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'xolox/vim-easytags', { 'for': ['c', 'cpp'] }
+Plug 'xolox/vim-misc'
+
+call plug#end()
 
 " *********** "
 " Preferences " {{{1
