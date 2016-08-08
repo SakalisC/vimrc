@@ -54,7 +54,9 @@ set hlsearch
 set nowrap
 set linebreak
 set showbreak=↪
-set breakindent
+if exists("&breakindent")
+	set breakindent
+endif
 set number
 set showcmd
 set completeopt=menu,longest
