@@ -30,6 +30,7 @@ Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
 Plug 'Tagbar'
 Plug 'tomasr/molokai'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-repeat'
