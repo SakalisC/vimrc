@@ -129,6 +129,8 @@ let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
 let g:pandoc#modules#disabled = ['formatting', 'chdir']
+let g:pandoc#syntax#codeblocks#embeds#use = 1
+let g:pandoc#syntax#codeblocks#embeds#langs = ['c', 'cpp', 'python', 'bash=sh', 'sh']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
