@@ -50,6 +50,7 @@ call plug#end()
 " *********** "
 " Preferences " {{{1
 " *********** "
+set modeline
 " Settings regarding the visual aspects of vim
 set hlsearch
 set nowrap
