@@ -144,7 +144,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_confirm_extra_conf=1
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py"
-let g:ycm_register_as_syntastic_checker=0
+let g:ycm_register_as_syntastic_checker=1
 let NERDSpaceDelims=1
 
 " **************** "
