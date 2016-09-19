@@ -134,7 +134,7 @@ let g:pandoc#syntax#codeblocks#embeds#langs = ['c', 'cpp', 'python', 'bash=sh', 
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
-			\ "active_filetypes": ["sh", "lua", "python", "haskell"],
+			\ "active_filetypes": ["sh", "lua", "python", "haskell", "llvm"],
 			\ "passive_filetypes": [] }
 " let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:UltiSnipsExpandTrigger = "<C-s>"
