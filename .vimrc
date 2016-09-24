@@ -9,7 +9,6 @@ Plug 'bling/vim-airline'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'dahu/LearnVim'
 Plug 'derekwyatt/vim-fswitch'
-Plug 'derekwyatt/vim-protodef'
 Plug 'frasercrmck/formative.vim', { 'for': ['c', 'cpp'] }
 Plug 'godlygeek/tabular'
 Plug 'hexHighlight.vim'
@@ -20,7 +19,6 @@ Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'tex' }
 Plug 'lukerandall/haskellmode-vim', { 'for': 'haskell' }
 Plug 'milkypostman/vim-togglelist'
 Plug 'nelstrom/vim-visual-star-search'
-Plug 'Pychimp/vim-luna'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -28,7 +26,6 @@ Plug 'scrooloose/syntastic'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
 Plug 'Tagbar'
-Plug 'tomasr/molokai'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
@@ -42,8 +39,6 @@ Plug 'travitch/hasksyn'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'xolox/vim-easytags', { 'for': ['c', 'cpp'] }
-Plug 'xolox/vim-misc'
 
 call plug#end()
 
