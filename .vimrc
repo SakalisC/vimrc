@@ -271,8 +271,6 @@ nnoremap <silent> <leader>ve :split $MYVIMRC<CR>
 nnoremap <silent> <leader>vs :source $MYVIMRC<CR>
 " Mappings for fswitch.
 nnoremap <silent> <Leader>h :FSHere<cr>`"
-" Write with sudo
-cnoremap w!! w !sudo dd of=%
 " Use <Space> to unfold folds in normal mode (if any at cursor)
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 " Use // to toggle comments
@@ -288,7 +286,6 @@ nnoremap <F4> :NERDTreeToggle<CR>
 " Command-T mappings
 nnoremap <silent> <Leader>e :CtrlP<CR>
 nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
-nnoremap <silent> <Leader>t :CtrlPTag<CR>
 " Some quick toggles
 nnoremap <C-n> :call NumberToggle()<cr>
 nnoremap <leader>sh :call HexHighlight()<cr>
@@ -303,9 +300,6 @@ nnoremap <silent> <leader>S :call <SID>SynStack()<CR>
 " Toggle between greek_utf-8 and the default keymap
 nnoremap <C-l> :call ToggleGreekKeymap()<cr>
 inoremap <C-l> <C-O>:call ToggleGreekKeymap()<cr>
-" Update the ctags and cscope databases
-nnoremap <leader>T :UpdateTags<cr>
-nnoremap <leader>C :!cscope -b -R<cr>
 " Smooth scrolling
 nnoremap <silent> <C-U> :call SmoothScroll(1)<cr>
 nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
