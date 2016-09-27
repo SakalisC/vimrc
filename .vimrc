@@ -105,7 +105,7 @@ if &term == 'xterm'
 	set t_Co=256
 endif
 colorscheme rdark-mod
-set colorcolumn=81,121
+set colorcolumn=+1,81,121
 
 " *************** "
 " Plugin settings " {{{1
