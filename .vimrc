@@ -324,6 +324,10 @@ nnoremap <leader>cd :cd %:h<cr>
 " Ycm commands
 nmap <leader>gt :YcmCompleter GoTo<cr>
 nmap <leader>gT :YcmCompleter GetType<cr>
+" Relative edit - Edit prepopulated with the directory of the current file
+cnoremap er<space> e <c-r>=expand("%:h")<cr>/
+" Map <C-A> to move to the beginning of the line, like it does in my terminal
+cnoremap <c-a> <home>
 
 " ************* "
 " Abbreviations " {{{1
