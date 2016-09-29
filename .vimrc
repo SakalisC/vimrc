@@ -261,6 +261,16 @@ function! ReplaceWordCallback()
 	augroup END
 	augroup! callback_CirtUrvOw
 endfunction
+" Get the text selected by the current visual selection
+function! GetSelectionText()
+	" https://stackoverflow.com/questions/1533565/how-to-get-visually-selected-text-in-vimscript/6271254#6271254
+	let [lnum1, col1] = getpos("'<")[1:2]
+	let [lnum2, col2] = getpos("'>")[1:2]
+	let lines = getline(lnum1, lnum2)
+	let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
+	let lines[0] = lines[0][col1 - 1:]
+	return join(lines, "\\n")
+endfunction
 
 " ************ "
 " Key bindings " {{{1
@@ -308,9 +318,14 @@ nnoremap <silent> <C-D> :call SmoothScroll(0)<cr>
 nnoremap <leader>x :call BinaryToggle()<cr>
 " Paste from the yank register in Visual mode
 vnoremap P "0p
+" :s prepopulated with the current search pattern (replace-search)
+nnoremap <leader>rs :%s/<c-r>///gc<left><left><left>
+vnoremap <leader>rs :s/<c-r>///gc<left><left><left>
+" :s prepopulated with the work under the cursor (replace-word)
+nnoremap <leader>rw :%s/\V\<<c-r><c-w>\>//gc<left><left><left>
+" :s prepopulated with the current visual selection (replace-visual)
+vnoremap <leader>rv <esc>:%s/\V<c-r>=GetSelectionText()<cr>//gc<left><left><left>
 " Replace all occurences of the word under the cursor
-nnoremap <leader>r :%s/<c-r>///gc<left><left><left>
-vnoremap <leader>r :%s/<c-r>///gc<left><left><left>
 nnoremap <silent> <leader>R :call ReplaceWord()<cr>
 " Don't move when using * for searching
 nnoremap <silent> * :let stay_star_view=winsaveview()<cr>*:call winrestview(stay_star_view)<cr>
