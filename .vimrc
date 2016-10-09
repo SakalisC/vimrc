@@ -37,8 +37,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'travitch/hasksyn'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
@@ -124,9 +122,7 @@ let g:fmtv_clang_format_py = $HOME . '/.vim/clang-format.py'
 let g:haddock_browser="/usr/bin/chromium"
 let g:LatexBox_output_type="pdf"
 let g:LatexBox_viewer="evince"
-let g:pandoc#modules#disabled = ['formatting', 'chdir']
-let g:pandoc#syntax#codeblocks#embeds#use = 1
-let g:pandoc#syntax#codeblocks#embeds#langs = ['c', 'cpp', 'python', 'bash=sh', 'sh']
+let g:markdown_fenced_languages = ['c', 'cpp', 'python', 'bash=sh', 'sh']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 0
 let g:syntastic_mode_map = { "mode": "passive",
