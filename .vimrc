@@ -53,7 +53,6 @@ if exists("&breakindent")
 	set breakindent
 endif
 set number
-set relativenumber
 set showcmd
 set completeopt=menu,longest
 set wildmenu
