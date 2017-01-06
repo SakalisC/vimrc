@@ -37,6 +37,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'travitch/hasksyn'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'vim-scripts/Conque-GDB'
 
 call plug#end()
 
@@ -110,6 +111,8 @@ set colorcolumn=+1,81,121
 " *************** "
 let g:airline_exclude_preview = 1
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
+let g:ConqueTerm_CloseOnEnd = 1
+let g:ConqueTerm_StartMessages = 0
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
 let g:easytags_auto_update=0
