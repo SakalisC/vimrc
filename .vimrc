@@ -367,3 +367,5 @@ augroup END
 " autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 " autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " augroup END
+
+autocmd BufNewFile,BufRead *.cl set filetype=c
