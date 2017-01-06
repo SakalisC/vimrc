@@ -111,6 +111,7 @@ set colorcolumn=+1,81,121
 " *************** "
 let g:airline_exclude_preview = 1
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
+let g:ConqueGdb_Leader = '<leader>G'
 let g:ConqueTerm_CloseOnEnd = 1
 let g:ConqueTerm_StartMessages = 0
 let g:ctrlp_working_path_mode=0
@@ -341,6 +342,8 @@ nmap <leader>gT :YcmCompleter GetType<cr>
 cnoremap <expr> er<space> getcmdtype() == ":" && getcmdline() == '' ? 'e <c-r>=expand("%:h")<cr>/' : 'er '
 " Map <C-A> to move to the beginning of the line, like it does in my terminal
 cnoremap <c-a> <home>
+" Conque
+nnoremap <leader>GG :ConqueGdb<cr>
 
 " ************* "
 " Abbreviations " {{{1
