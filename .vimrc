@@ -344,6 +344,8 @@ cnoremap <expr> er<space> getcmdtype() == ":" && getcmdline() == '' ? 'e <c-r>=e
 cnoremap <c-a> <home>
 " Conque
 nnoremap <leader>GG :ConqueGdb<cr>
+" Search and fold everything else, use zr and zm to show or hide more context
+command! -nargs=+ Foldsearch exe "normal /".<q-args>."" | setlocal foldexpr=(getline(v:lnum)=~@/)?0:(getline(v:lnum-1)=~@/)\|\|(getline(v:lnum+1)=~@/)?1:2 foldmethod=expr foldlevel=0 foldcolumn=2
 
 " ************* "
 " Abbreviations " {{{1
