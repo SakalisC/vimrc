@@ -123,7 +123,10 @@ let g:easytags_include_members=1
 let g:easytags_python_enabled=1
 let g:fmtv_clang_format_py = $HOME . '/.vim/clang-format.py'
 let g:haddock_browser="/usr/bin/chromium"
+let g:LatexBox_custom_indent=0
+let g:LatexBox_latexmk_async=1
 let g:LatexBox_output_type="pdf"
+let g:LatexBox_quickfix=3
 let g:LatexBox_viewer="evince"
 let g:markdown_fenced_languages = ['c', 'cpp', 'python', 'bash=sh', 'sh']
 let g:syntastic_aggregate_errors = 1
