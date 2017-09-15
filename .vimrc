@@ -11,7 +11,7 @@ Plug 'dahu/LearnVim'
 Plug 'derekwyatt/vim-fswitch'
 Plug 'frasercrmck/formative.vim', { 'for': ['c', 'cpp'] }
 Plug 'godlygeek/tabular'
-Plug 'hexHighlight.vim'
+Plug 'vim-scripts/hexHighlight.vim'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-user'
 Plug 'kien/ctrlp.vim'
@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'sjl/gundo.vim', { 'on': 'GundoToggle' }
-Plug 'Tagbar'
+Plug 'majutsushi/Tagbar'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
