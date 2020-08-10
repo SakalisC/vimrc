@@ -116,6 +116,13 @@ let g:ConqueTerm_CloseOnEnd = 1
 let g:ConqueTerm_StartMessages = 0
 let g:ctrlp_working_path_mode=0
 let g:ctrlp_open_new_file='r'
+let g:ctrlp_custom_ignore={
+	\ 'vcs': '\v[\/]\.(git|hg|svng)$',
+	\ 'build': '\v[\/]build$',
+	\ 'python': '\v[\/]venv$',
+	\ 'gem5-data': '\v[\/].*-data$',
+    \ 'bins': '\v\.(exe|so|dll|o|a|bin)$',
+	\ }
 let g:easytags_auto_update=0
 let g:easytags_async=1
 let g:easytags_dynamic_files=2
